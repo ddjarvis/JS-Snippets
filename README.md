@@ -1,8 +1,6 @@
 ## Javascript Snippets / Bookmarklets Repo
-- [x] Identify how to use GitHub as a CDN 
-- [ ] Identify how to load external JS
-
-[Test](#load-external-js-in-bookmarklet)
+- [x] Identify how to use GitHub as a CDN \([Guide](#use-github-repo-as-cdn)\)
+- [ ] Identify how to load external JS \([Guide](#load-external-js-in-bookmarklet)\)
 
 ---
 
@@ -29,18 +27,18 @@
 <!-- Get a specific version -->
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/atomic@4.0.0/dist/atomic.js"></script>
 ```
-##### Sources:
+##### Source(s):
 *How to turn any GitHub repo into a CDN | Go Make Things*
 https://web.archive.org/web/20191105083227/https://gomakethings.com/how-to-turn-any-github-repo-into-a-cdn/
 
+---
 
+### Load External JS in Bookmarklet
+
+*No working guide found... yet*
+
+---
 
 ##### Interesting/Related Links:
 *How to Host Files Using Google Drive*
 https://web.archive.org/web/20191105083307/https://smashballoon.com/instagram-feed/standalone/docs/host-on-google-drive/
-
-===
-
-### Load External JS in Bookmarklet
-
-***No working guide found... yet***
