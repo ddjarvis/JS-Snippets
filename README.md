@@ -2,6 +2,7 @@
 - [x] Identify how to use GitHub as a CDN 
 - [ ] Identify how to load external JS
 
+[Test](#load-external-js-in-bookmarklet)
 
 ---
 
