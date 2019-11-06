@@ -2,6 +2,8 @@
 - [x] Identify how to use GitHub as a CDN \([Guide](#use-github-repo-as-cdn)\)
 - [ ] Identify how to load external JS \([Guide](#load-external-js-in-bookmarklet)\)
 
+[My To-Do Lists](#to-do-lists)
+
 ---
 
 ### Use GitHub Repo as CDN
@@ -42,3 +44,15 @@ https://web.archive.org/web/20191105083227/https://gomakethings.com/how-to-turn-
 #### Interesting/Related Links:
 *How to Host Files Using Google Drive*
 https://web.archive.org/web/20191105083307/https://smashballoon.com/instagram-feed/standalone/docs/host-on-google-drive/
+
+---
+
+---
+
+### To-Do Lists
+
+#### Snippets
+ - [x] Text Copier - `copyText(string_to_copy);`
+ - [ ] String Cleaner
+ - [ ] Iterator
+ - [ ] Button Maker
