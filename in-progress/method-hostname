@@ -1,0 +1,7 @@
+String.prototype.hostname = function(){
+	x = this;
+	x = x.replace(/^(?:[\w\d]+\:\/\/)?/,'');
+	x = x.replace(/((?:[\w\d][\w\d-]+)(?:\.[\w\d][\w\d-]+)+)(?:\/.*)?/g,'$1');
+	if((x.length==0)||(x=="")){return false;}
+	return x;
+}
