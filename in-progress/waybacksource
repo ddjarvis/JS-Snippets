@@ -1,0 +1,25 @@
+String.prototype.waybacksource = function(togglevar=1){
+	/*
+		togglevar(1) = get page
+		togglevar(2) = get date
+	*/
+	x = this;
+	x = x.replace(/^(?:[\w\d]+\:\/\/)?/,'');
+	x = x.replace(/(?:(?:[\w\d][\w\d-]+)(?:\.[\w\d][\w\d-]+)+)\/?(web)?\/?/,'');
+	if((x.length==0)||(x=="")){return false;}
+	
+	if(togglevar==1)
+    {
+		x = x.replace(/([\d]+)\/(.*)/g,'$2');
+    }
+	else if(togglevar==2)
+    {
+		x = x.replace(/([\d]+)\/(.*)/g,'$1');
+		x = x.replace(/([\d]{4})([\d]{2})([\d]{2})([\d]{2})([\d]{2})([\d]{2})/,'$1-$2-$3-$4-$5-$6') + '[UTC]';
+    }
+	else
+    {
+		return false;
+    }
+	return x;
+}
