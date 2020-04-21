@@ -5,3 +5,11 @@ String.prototype.hostname = function(){
 	if((x.length==0)||(x=="")){return false;}
 	return x;
 }
+
+function gethostname(inputvar){
+	x = inputvar;
+	x = x.replace(/^(?:[\w\d]+\:\/\/)?/,'');
+	x = x.replace(/((?:[\w\d][\w\d-]+)(?:\.[\w\d][\w\d-]+)+)(?:\/.*)?/g,'$1');
+	if((x.length==0)||(x=="")){return false;}
+	return x;
+}
