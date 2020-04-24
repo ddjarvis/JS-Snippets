@@ -1,27 +1,24 @@
 javascript: (function() {
 	var fPrefix = "[YT] ";
-	var fPath = "Downloads\\Downloads from IDM\\Youtube\\";
-	var fExt = ".mp4";
 
 	var videoId = getYTId();
-	var videoId_tag = " ([ytid-" + videoId + "])";
+	var videoId_tag = " ([vid-" + videoId + "])";
 	var videoTitle_raw = document.querySelector("h1.title").innerText.trim();
 	var videoTitle_clean = cleanString(videoTitle_raw);
 	var videoCreator_raw = document.querySelector("div#text-container.ytd-channel-name").innerText.trim();
 	var videoCreator_clean = cleanString(videoCreator_raw).trim();
 
-	var fName = fPrefix + videoCreator_raw + " -- " + videoTitle_clean + videoId_tag;
-	var savePath = fPath + fName;
+var fName = fPrefix + videoCreator_clean + " -- " + videoTitle_clean + videoId_tag + ".mp4";
+
+	var grabberBase = "https://www.savethevideo.com/download?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D";
+	var grabberLink = grabberBase + videoId;
 
 	copyText(fName);
+	/*alert(grabberLink);*/
 
-  var grabberBase = "https://www.savethevideo.com/download?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D"
-	var grabberLink = grabberBase + videoId;
-	var win = window.open(grabberLink);
-	win.focus();
+	window.location.href = grabberLink;
 
-
-	function copyText(inputString) {
+function copyText(inputString) {
 		var jscbta = document.createElement("textarea");
 		jscbta.value = inputString;
 		document.body.appendChild(jscbta);
@@ -59,7 +56,6 @@ javascript: (function() {
 		var_output = var_cleaning;
 		return var_output;
 	}
-  
   function getYTId(x=0)
 {
 	if(x==0)
