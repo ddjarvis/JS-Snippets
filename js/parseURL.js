@@ -1,3 +1,20 @@
+/*
+
+-= Source =-
+Title: Parsing URLs in JavaScript
+Author: Cory LaViska (https://www.abeautifulsite.net/author/claviska)
+Link: https://www.abeautifulsite.net/parsing-urls-in-javascript
+Link (Archived): https://web.archive.org/web/20200614163246/https://www.abeautifulsite.net/parsing-urls-in-javascript
+
+-= Description =-
+This function takes a URL and returns its different components.
+
+-= Syntax =-
+parseURL(string)
+
+*/
+
+
 function parseURL(url) {
     var parser = document.createElement('a'),
         searchObject = {},
