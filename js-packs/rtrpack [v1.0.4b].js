@@ -102,7 +102,7 @@ function changeTitle()
 
 	if(panelTitle && pageCursor=='default' && panelDisplay=='inline')
 	{
-		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review');},800);;
+		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review');},1100);;
 		document.getElementById('__cancel_button').addEventListener('click',revertTitle);
 	}
 	else{setTimeout(changeTitle,500);}
@@ -140,4 +140,7 @@ function save()
 	
 	1.0.4
 	- Added [save] function. (!Incomplete PS note handlind!)
+	
+	1.0.4b
+	- Increased timeout of title change step in [changeTitle] from 800 to 1100
 */
