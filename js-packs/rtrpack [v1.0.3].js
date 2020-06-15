@@ -23,6 +23,8 @@ function clearSearch()
 
 function searchCandidate(emailAddress,reqNumber)
 {
+	revertTitle()
+	
 	var isGearCardOpen = (document.getElementById('action_popup_div').style.display=='inline') ? true : false;
 	if(isGearCardOpen){action_popup_close(); isGearCardOpen=!isGearCardOpen;}
 
@@ -118,4 +120,7 @@ function revertTitle()
 	- Added version control at bottom of code
 	- Added [revertTitle] function hat just reverts title to ~"RTR Gateway"
 	- Added click event to cancel button to trigger [revertTitle]
+	
+	1.0.3
+	- Added [revertTitle] to start of [searchCandidate] as part of pre-search cleanup
 */
