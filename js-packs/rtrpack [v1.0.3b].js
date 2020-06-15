@@ -23,7 +23,7 @@ function clearSearch()
 
 function searchCandidate(emailAddress,reqNumber)
 {
-	revertTitle()
+	revertTitle();
 	
 	var isGearCardOpen = (document.getElementById('action_popup_div').style.display=='inline') ? true : false;
 	if(isGearCardOpen){action_popup_close(); isGearCardOpen=!isGearCardOpen;}
@@ -123,4 +123,7 @@ function revertTitle()
 	
 	1.0.3
 	- Added [revertTitle] to start of [searchCandidate] as part of pre-search cleanup
+	
+	1.0.3b
+	- Fixed syntax error with [revertTitle] addition
 */
