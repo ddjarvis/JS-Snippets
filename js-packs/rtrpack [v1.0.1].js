@@ -100,7 +100,22 @@ function changeTitle()
 
 	if(panelTitle && pageCursor=='default' && panelDisplay=='inline')
 	{
-		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review')},800);;
+		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review');},800);;
+		document.getElementById('__cancel_button').addEventListener('click',revertTitle);
 	}
 	else{setTimeout(changeTitle,500);}
 }
+
+function revertTitle()
+    {
+        document.title = 'RightThingRecruit - Gateway';
+    }
+
+/*	
+	Version Control
+
+	1.0.2
+	- Added version control at bottom of code
+	- Added [revertTitle] function hat just reverts title to ~"RTR Gateway"
+	- Added click event to cancel button to trigger [revertTitle]
+*/
