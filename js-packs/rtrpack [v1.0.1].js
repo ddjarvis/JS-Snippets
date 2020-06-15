@@ -99,6 +99,8 @@ function changeTitle()
 	panelDisplay = document.getElementById('Site_pageMask').style.display;
 
 	if(panelTitle && pageCursor=='default' && panelDisplay=='inline')
-	{document.title = document.title.slice(7).concat(' - Resume Review');}
+	{
+		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review')},800);;
+	}
 	else{setTimeout(changeTitle,500);}
 }
