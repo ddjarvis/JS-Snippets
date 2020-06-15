@@ -24,14 +24,22 @@ function injectFn(fnarray)
 	if(!injectedScript)
 	{
 		target = document.head;
+		targetB = document.body;
 		element = document.createElement('script');
+		node = document.createTextNode(fnstring);
+		element.appendChild(node);
 		element.id = injectId;
+		
 		target.appendChild(element);
-		injectedScript = document.getElementById(injectId);
+		
+		element.id = injectId+'Body';
+		targetB.appendChild(element);
 	}
-
-	node = document.createTextNode(fnstring);
-	injectedScript.appendChild(node);
+	else
+	{
+		node = document.createTextNode(fnstring);
+		injectedScript.appendChild(node);
+	}
 }
 
 function copyText(v_input) {
