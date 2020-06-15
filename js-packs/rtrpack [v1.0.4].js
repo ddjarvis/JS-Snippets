@@ -109,10 +109,21 @@ function changeTitle()
 }
 
 function revertTitle()
-    {
+{
         document.title = 'RightThingRecruit - Gateway';
-    }
-
+}
+function save()
+{
+	var cdStatus=document.querySelector('table.controlpanel tr[bgcolor="#eeeeee"] img[src^="prefs.dbrez"]').parentElement.parentElement.parentElement.innerText.trim(),cdStat=cdStatus.slice(0,2);
+	if(cdStat=='RM')
+	{
+		document.querySelectorAll('span.portal-cel>button.portal-button[onclick*="save"]')[0].click();
+	}
+	else
+	{
+		alert('STOP! Candidate status is ['+ cdStatus + '].');
+	}
+}
 /*	
 	Version Control
 
@@ -126,4 +137,7 @@ function revertTitle()
 	
 	1.0.3b
 	- Fixed syntax error with [revertTitle] addition
+	
+	1.0.4
+	- Added [save] function. (!Incomplete PS note handlind!)
 */
