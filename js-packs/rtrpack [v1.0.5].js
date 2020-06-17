@@ -103,6 +103,7 @@ function changeTitle()
 	if(panelTitle && pageCursor=='default' && panelDisplay=='inline')
 	{
 		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review');},1100);;
+		document.getElementById('__save_button').addEventListener('click',saveTitle);
 		document.getElementById('__cancel_button').addEventListener('click',revertTitle);
 	}
 	else{setTimeout(changeTitle,500);}
@@ -111,6 +112,10 @@ function changeTitle()
 function revertTitle()
 {
         document.title = 'RightThingRecruit - Gateway';
+}
+function saveTitle()
+{
+        document.title = 'RightThingRecruit - Saving';
 }
 function save()
 {
@@ -129,7 +134,7 @@ function save()
 
 	1.0.2
 	- Added version control at bottom of code
-	- Added [revertTitle] function hat just reverts title to ~"RTR Gateway"
+	- Added [revertTitle] function that just reverts title to ~"RTR Gateway"
 	- Added click event to cancel button to trigger [revertTitle]
 	
 	1.0.3
@@ -143,4 +148,7 @@ function save()
 	
 	1.0.4b
 	- Increased timeout of title change step in [changeTitle] from 800 to 1100
+	
+	1.0.5
+	
 */
