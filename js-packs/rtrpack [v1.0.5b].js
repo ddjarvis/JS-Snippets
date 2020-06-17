@@ -103,7 +103,6 @@ function changeTitle()
 	if(panelTitle && pageCursor=='default' && panelDisplay=='inline')
 	{
 		setTimeout(function(){document.title = document.title.slice(7).concat(' - Resume Review');},1100);;
-		document.getElementById('__save_button').addEventListener('click',saveTitle);
 		document.getElementById('__cancel_button').addEventListener('click',revertTitle);
 	}
 	else{setTimeout(changeTitle,500);}
@@ -150,5 +149,9 @@ function save()
 	- Increased timeout of title change step in [changeTitle] from 800 to 1100
 	
 	1.0.5
+	- Created [saveTitle] function that changes the title to "xRootx - Saving"
+	- Added "onclick" event listener to panel save button that triggers saveTitle
 	
+	1.0.5b
+	- Removed previously added onclick event from save button due to possible conflict.
 */
