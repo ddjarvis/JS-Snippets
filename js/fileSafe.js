@@ -1,7 +1,7 @@
 function fileSafe(input)
 {
 	var proc = input, output;
-	proc = proc.replace(/( +<+ +(?!.*>))|((?<!<.*) +>+ +)|( +:+ +)/g," - ");
+	proc = proc.replace(/( +<+ +(?!.*>))|((?<!<.*) +>+ +)|(( ?:+ +)|( +:+ ?)|( +:+ +))/g," - ");
 	proc = proc.replace(/([?*"]+)/g,"");
 	proc = proc.replace(/(<+(?!.*>))|((?<!<.*)>+)|((?<!<.*)(?<=>.*)>)|([/\\|]+)|(:+)/g," ");
 	proc = proc.replace(/</g,"(").replace(/>/g,")");
