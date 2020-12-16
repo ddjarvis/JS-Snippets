@@ -1,0 +1,42 @@
+Sources:
+• 25+ JavaScript Shorthand Coding Techniques - SitePoint
+https://www.sitepoint.com/shorthand-javascript-techniques/
+
+• How to Make a Monthly Calendar With Real Data | CSS-Tricks
+https://css-tricks.com/how-to-make-a-monthly-calendar-with-real-data/
+
+• Challenge of building a Calendar with Pure JavaScript | by Nitin Patel | Medium
+https://medium.com/@nitinpatel_20236/challenge-of-building-a-calendar-with-pure-javascript-a86f1303267d
+
+• Create a 2020 Calendar Using CSS
+https://www.htmlgoodies.com/beyond/css/create-a-2020-calendar-using-css.html
+
+• moment-business-days - npm
+https://www.npmjs.com/package/moment-business-days
+
+• Modern Calendar Date Picker In Vanilla JavaScript | CSS Script
+https://www.cssscript.com/calendar-date-picke/
+
+• Modern Calendar Date Picker In Vanilla JavaScript | CSS Script
+https://www.cssscript.com/calendar-date-picke/
+
+• Custom Single/Multi Select In Pure JavaScript - vanillaSelectBox | CSS Script
+https://www.cssscript.com/single-multi-select-vanilla/
+
+• Full-featured Data Table JavaScript Library - Grid.js | CSS Script
+https://www.cssscript.com/full-featured-data-table-grid/
+
+• CSS Only Responsive Organization/Family Tree | CSS Script
+https://www.cssscript.com/org-family-tree/
+
+• Simple AOS (Animate On Scroll) In JavaScript | CSS Script
+https://www.cssscript.com/simple-aos-animation/
+
+• Versatile Interactive SVG Chart Library - apexcharts.js | CSS Script
+https://www.cssscript.com/svg-chart-library-apexcharts/
+
+• Sweet Alert Message In JavaScript - as-alert-message | CSS Script
+https://www.cssscript.com/sweet-alert-message/
+
+• 17+ Responsive Accessible Header Navbar Templates | CSS Script
+https://www.cssscript.com/header-navbar-templates/
