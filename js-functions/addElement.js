@@ -10,7 +10,7 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
   }
 
   if (!parentElem) {
-    parent.Elem = 'document.body'
+    parentElem = document.body;
   }
 
   var elem = document.createElement(elemType);
