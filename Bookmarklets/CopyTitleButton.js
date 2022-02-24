@@ -25,7 +25,10 @@ javascript: (function() {
 		temp_text.style.display = 'none';
 		var temp_btn = document.querySelectorAll('#temp_btn').length < 1 ? addElement('button', 'temp_btn', ' < Copy Title / Link > ', temp_div) : document.getElementById('temp_btn');
 		temp_btn.addEventListener('click', () => {
-			out = (event.shiftKey || event.altKey) ? outB : outA;
+			out = (event.ctrlKey && event.shiftKey) ? page_title
+			 : event.altKey ? page_link
+			 : event.shiftKey ? outB
+			 : outA;
 			copyText(out);
 			temp_div.remove();
 		});
