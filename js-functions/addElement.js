@@ -25,6 +25,6 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
     parentElem.insertBefore(elem, beforeElem)
   }
 
-	elemClasses.forEach(x => elem.classList.add(x));
+  elemClasses.forEach(x => elem.classList.add(x));
   return document.getElementById(elemId);
 }
