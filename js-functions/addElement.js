@@ -1,4 +1,4 @@
-function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '', elemClasses = []) {
+function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '') {
   if (!elemId) {
     elemId = 'my' + elemType.charAt(0).toUpperCase() + elemType.substr(1).toLowerCase();
   }
@@ -24,7 +24,5 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
   } else {
     parentElem.insertBefore(elem, beforeElem)
   }
-
-  elemClasses.forEach(x => elem.classList.add(x));
   return document.getElementById(elemId);
 }
