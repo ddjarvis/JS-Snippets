@@ -1,4 +1,4 @@
-function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '', elemClasses = []) {
+function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '', elemClasses = [], elemAttrib = {}) {
   if (!elemId) {
     elemId = 'my' + elemType.charAt(0).toUpperCase() + elemType.substr(1).toLowerCase();
   }
@@ -26,5 +26,8 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
   }
 
   elemClasses.forEach(x => elem.classList.add(x));
+
+  Object.keys(elemAttrib).forEach(key => elem.setAttribute(key,elemAttrib[key]));
+
   return document.getElementById(elemId);
 }
