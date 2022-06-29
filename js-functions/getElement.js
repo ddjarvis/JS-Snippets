@@ -1,4 +1,4 @@
-function checkElement(selector,index,limit){
+function getElement(selector,index,limit){
 	return new Promise((resolve,reject) => {
 	console.log(index);
 		index = index ?? '0';
