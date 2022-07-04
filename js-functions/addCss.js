@@ -4,7 +4,7 @@ function addCss(inputVar = "") {
 	}
 	var s = document.createElement("style");
 	var c = "\n" + inputVar + "\n";
-	console.log(c);
+	//console.log(c);
 	try {
 		s.appendChild(document.createTextNode(c));
 		document.head.appendChild(s);
