@@ -15,3 +15,5 @@ function addCode(inputVar = "") {
 		document.body.appendChild(s);
 	}
 }
+
+const codeInjector = fn => addCode(fn+[]);
