@@ -14,5 +14,3 @@ function addCode(inputVar = "") {
 		document.body.appendChild(s);
 	}
 }
-
-
