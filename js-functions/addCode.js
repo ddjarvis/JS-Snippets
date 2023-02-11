@@ -18,5 +18,6 @@ function addCode(inputVar = "") {
 
 const codeInjector = fn => addCode(fn+[]);
 
+
 codeInjector(addCode);
 codeInjector(codeInjector);
