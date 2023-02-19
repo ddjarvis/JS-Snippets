@@ -6,7 +6,7 @@ function fileSafe(input)
 	proc = proc.replace(/([?*"]+)/g,"");
 	proc = proc.replace(/(<+(?!.*>))|((?<!<.*)>+)|((?<!<.*)(?<=>.*)>)|([\/\\|]+)|(:+)/g," ");
 	proc = proc.replace(/</g,"(").replace(/>/g,")");
-	proc = proc.replace(/( {2,})/g," ");
+	proc = proc.replace(/( {2,})/g," ").replaceAll('`',"'");
 	output = proc.trim();
 	return output;
 }
