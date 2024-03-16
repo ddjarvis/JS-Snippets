@@ -10,6 +10,9 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
     elemText = '';
   }
 */
+  if (elemText == "\nb") {
+    elemText = '&nbsp;';
+  }
   if (!parentElem) {
     parentElem = document.body;
   }
