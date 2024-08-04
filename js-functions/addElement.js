@@ -1,14 +1,18 @@
-function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '') {
+function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', beforeElem = '', elemClasses = [], elemAttrib = {}) {
   if (!elemId) {
     elemId = 'my' + elemType.charAt(0).toUpperCase() + elemType.substr(1).toLowerCase();
   }
+/*
   if (!elemText) {
     elemText = '&nbsp;';
   }
   if (elemText == "-") {
     elemText = '';
   }
-
+*/
+  if (elemText == "\nb") {
+    elemText = '&nbsp;';
+  }
   if (!parentElem) {
     parentElem = document.body;
   }
@@ -22,7 +26,12 @@ function addElement(elemType = '', elemId = '', elemText = '', parentElem = '', 
   if (!beforeElem) {
     parentElem.appendChild(elem);
   } else {
-    parentElem.insertBefore(elem, beforeElem)
+    parentElem.insertBefore(elem, beforeElem);
   }
+
+  elemClasses.forEach(x => elem.classList.add(x));
+
+  Object.keys(elemAttrib).forEach(key => elem.setAttribute(key,elemAttrib[key]));
+
   return document.getElementById(elemId);
 }
